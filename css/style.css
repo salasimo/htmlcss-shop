@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 50vw;
+    min-width: 650px;
+    background-color: #3772FF;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.pr-1 {
+    background-image: url("../img/beats.jpg");
+}
+
+.pr-2 {
+    background-image: url("../img/caffe.jpg");
+}
+
+.pr-3 {
+    background-image: url("../img/dyson.jpg");
+}
+
+.pr-4 {
+    background-image: url("../img/hue.jpg");
+}
+
+.pr-5 {
+    background-image: url("../img/iphone.jpg");
+}
+
+.pr-6 {
+    background-image: url("../img/mac.jpg");
+}
+
+.prodotto {
+    width: 210px;
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    position: relative;
+}
+
+.linea {
+    text-align: center;
+}
+
+.linea1 {
+    margin-bottom: 5px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.blocco-ripetuto {
+    margin-top: 4px;
+}
+
+.sconto30::after {
+    content: "-30%";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #97CC04;
+}
+
+.sconto10::after {
+    content: "-10%";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #BF1616;
+}
+
+.cuore {
+    font-size: 30px;
+    position: relative;
+    color: red;
+    color: rgba(255, 0, 0, 0.0);
+    width: 100%;
+    height: 100%;
+}
+
+.cuore p {
+    display: inline-block;
+    position: relative;
+    top: 180px;
+}
+
+.cuore:hover {
+    color: rgba(255, 0, 0, 1);
+    cursor: pointer;
+}
+
+.barra-fixed {
+    min-width: 650px;
+    height: 80px;
+    background-color: #080708;
+    color: #FDCA40;
+    ;
+    position: fixed;
+    top: -1px;
+    z-index: 10;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.barra-fixed h1, .barra-fixed h2 {
+    position: relative;
+    top: 15px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+footer{
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
