@@ -12,30 +12,6 @@ body {
     font-family: sans-serif;
 }
 
-.pr-1 {
-    background-image: url("../img/beats.jpg");
-}
-
-.pr-2 {
-    background-image: url("../img/caffe.jpg");
-}
-
-.pr-3 {
-    background-image: url("../img/dyson.jpg");
-}
-
-.pr-4 {
-    background-image: url("../img/hue.jpg");
-}
-
-.pr-5 {
-    background-image: url("../img/iphone.jpg");
-}
-
-.pr-6 {
-    background-image: url("../img/mac.jpg");
-}
-
 .prodotto {
     width: 210px;
     height: 230px;
@@ -43,6 +19,12 @@ body {
     background-position: center;
     display: inline-block;
     position: relative;
+}
+
+.prodotto img{
+    object-fit: cover;
+    width: 210px;
+    height: 230px;
 }
 
 .linea {
@@ -58,33 +40,33 @@ main {
 }
 
 .blocco-ripetuto {
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
-.sconto::after{
+.sconto{
     position: absolute;
     top: 0px;
     right: 0px;
     padding: 2px;
 }
 
-.sconto30::after {
-    content: "-30%";
+.sconto30 {
     background-color: #97CC04;
 }
 
-.sconto10::after {
-    content: "-10%";
+.sconto10 {
     background-color: #BF1616;
 }
 
 .cuore {
     font-size: 30px;
-    position: relative;
+    position: absolute;
+    bottom:0px;
     color: red;
     color: rgba(255, 0, 0, 0.0);
     width: 100%;
     height: 100%;
+    z-index: 5;
 }
 
 .cuore p {
