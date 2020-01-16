@@ -61,19 +61,20 @@ main {
     margin-top: 4px;
 }
 
-.sconto30::after {
-    content: "-30%";
+.sconto::after{
     position: absolute;
     top: 0px;
     right: 0px;
+    padding: 2px;
+}
+
+.sconto30::after {
+    content: "-30%";
     background-color: #97CC04;
 }
 
 .sconto10::after {
     content: "-10%";
-    position: absolute;
-    top: 0px;
-    right: 0px;
     background-color: #BF1616;
 }
 
